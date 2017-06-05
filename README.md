@@ -8,6 +8,9 @@ Thanks python-hearthstone and https://gist.github.com/Tenchi2xh/68f20ed6531b4200
 - CODE はハースストーンのデッキコードに対応しています。
 - NAME は好きに名付けてください。(デフォルトは 'Great Deck!' です。)
 
+ファイルに書き込む場合は  
+`python -m lorewalker_cho decode CODE NAME > deckname.txt`  
+
 # 必要なもの
 
 - Python3
@@ -17,4 +20,5 @@ Thanks python-hearthstone and https://gist.github.com/Tenchi2xh/68f20ed6531b4200
 - click
 - python-hearthstone
 
-最初の使用でフォルダに `db.json` が作成されます。
+最初の使用でフォルダに `db.json` が作成されます。  
+
