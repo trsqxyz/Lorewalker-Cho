@@ -48,7 +48,7 @@ def sort_cards(cards):
             card["amount"] = 2
         cards_data.append(card)
     cards = sorted(cards_data,
-        key=lambda card: (card["amount"], card["cost"], card["name"]),
+        key=lambda card: (card["cost"], card["name"]),
         )
     return cards
 
