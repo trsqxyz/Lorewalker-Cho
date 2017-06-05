@@ -30,7 +30,7 @@ else:
 
 
 @click.group()
-def hsd():
+def lc():
     return
 
 def get_carddata(id):
@@ -64,7 +64,7 @@ def write_deck(deck, name):
     click.echo("#\n# {}".format(masters_serif))
     return
 
-@hsd.command()
+@lc.command()
 @click.argument("code", type=str)
 @click.argument("name", type=str, default="Great Deck!")
 def decode(code, name):
@@ -72,4 +72,4 @@ def decode(code, name):
     return write_deck(deck, name)
 
 if __name__ == "__main__":
-    hsd()
+    lc()
